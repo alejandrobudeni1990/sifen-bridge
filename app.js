@@ -8,7 +8,8 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 // Configuración SIFEN
-const SIFEN_URL = 'https://sifen-test.set.gov.py/de/ws/consultas/consulta-ruc.wsdl';
+const SIFEN_URL = 'https://sifen.set.gov.py/de/ws/consultas/consulta-ruc.wsdl';
+
 // Ruta raíz
 app.get('/', (req, res) => {
     res.json({ estado: 'ok', servicio: 'SIFEN Bridge' });
